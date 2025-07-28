@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap');
+
+*{
+    font-family: 'Crayon', sans-serif;
+}  
+
+body{
+    background-color: blanchedalmond;
+}
+
+.intro{
+    background-color:#ffbfbf;
+    text-align: center;
+}
+
+.intro a{
+    display: inline-block;
+    /* justify-content: center; */
+}
+
+.intro img{
+    width: 45%;
+    height: auto;
+}
+
+.intro .social-icon{
+    display: inline-block;
+    justify-content: center;
+    padding-bottom: 5px;
+    color: rgb(178, 178, 178);
+    font-size: 300%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+}
+
+.search{
+    --padding: 14px;
+
+    width: max-content;
+    /* display: flex; */
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    background: #f6f6f6;
+    /* margin-left: 50px; */
+    /* margin-top: 5px; */
+}
+
+.search-input{
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    color: #333333;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+}
+
+.search-input::placeholder{
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.search-icon{
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.hidden {
+    display: none;
+}
+
+.recipes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.2%;
+}
+
+.recipes .item{
+    /* width: 40%;
+    height: auto; */
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.recipes .item a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 150%;
+    color: #bf7233;
+}
+
+.recipes .item a:hover{
+    color: #603e24;
+}
+
+.recipes .item a img{
+    width: 100%;
+    height: auto;
+}

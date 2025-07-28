@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Crayon', sans-serif;
+}
+
+.intro{
+    background-color:#ffbfbf;
+    text-align: center;
+}
+
+.intro a{
+    display: inline-block;
+    /* justify-content: center; */
+}
+
+.intro img{
+    width: 45%;
+    height: auto;
+}
+
+.intro .social-icon{
+    display: inline-block;
+    justify-content: center;
+    padding-bottom: 5px;
+    color: rgb(178, 178, 178);
+    font-size: 300%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.main{
+    height: 100vh;
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+h2{
+    text-align: center;
+    font-size: 300%;
+    color: #bf7233;
+}
+
+.note{
+    display: block;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    font-size: 130%;
+}
+
+img#matcha{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 100%;*/
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+
+p{
+    text-align: justify;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 150%;
+    color: #bf7233;
+}
+
+figcaption{
+    font-size: 130%;
+}
+
+#skip-to-recipe{
+    display: block;
+    color: black;
+    background: rgb(206, 182, 152);
+    font-size: 150%;
+    text-align: center;
+    padding: 1% 0 1% 0;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#skip-to-recipe:hover{
+    background: rgb(148, 130, 107);
+}
+
+.instructions{
+    display: block;
+    text-align: left;
+    font-size: 150%;
+    color: #bf7233;
+    /* margin: 0 auto;
+    padding: 0 5%; */
+    margin-left: 5%;
+    margin-right: 5%;
+    /* max-width: 1101px; */
+    /* height: auto; */
+}
+
+/* figure{
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+} */
+
+.ingredients_and_equipment{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.ingredients_and_equipment figure{
+    text-align: center;
+    /* overflow: hidden; */
+}
+
+.ingredients_and_equipment figure img{
+    display: block;
+    width: 100%;
+}
+
+.prep_details{
+    display: block;
+    /* background: rgb(206, 182, 152); */
+    text-align: center;
+    padding: 1% 0 1% 0;
+    margin-left: 1%;
+    /* margin-right: 40%; */
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.prep_details p{
+    text-align: center;
+}
+
+#hojicha{
+    display: block;
+    text-align: center;
+}
+
+#hojicha img{
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 1%;
+}
