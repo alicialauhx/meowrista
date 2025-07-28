@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}Preparation Tips{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/drink_prep_tips.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="drink_prep_tips">
+    <div id="matcha_prep">
+        <h2>Matcha preparation tips</h2>
+        <p>
+            The most important tip for matcha preparation is to <b>NEVER use boiling water</b> to mix the matcha powder.
+            This is because high temperatures can spoil the natural flavors of the matcha and cause it to be more bitter.
+            Therefore, the optimal temperature for matcha preparation is around <b>70-80°C</b> to effectively dissolve the matcha powder while retaining its natural flavor.
+            <br><br>
+            It is often recommended to use <b>wooden spoons / chashaku</b> for scooping the matcha powder because matcha powder is known to react negatively with metal surfaces,
+            especially. <b>One small heap of powder</b> on a chashaku is equivalent to <b>1 g</b>,
+            while <b>one teaspoon</b> is equivalent to <b>2g</b>.
+        </p>
+        <figure class="recommended_equipment">
+            <img src="{{ url_for('static', filename='img/chashaku.png') }}">
+            <figcaption>Chashaku</figcaption>
+        </figure>
+        <p>
+            The standard matcha powder-to-water ratio is 2g to 70-80 ml of water. However,
+            I personally go for 10 ml for every g of powder, e.g., 2 gs to 20ml, 4 gs to 40 ml, etc.,
+            for a more concentrated flavor.
+            <br><br>
+            It is always recommended to use a <b>traditional bamboo whisk</b> to whisk the matcha.
+            This is because the tips of the bamboo whisk are designed specifically to break down clumps.
+            Before whisking, <b>ALWAYS soak the bamboo whisk in hot water (not boiling water)</b> for around 1 minute.
+            This is because the bamboo tips are brittle when dry, so soaking helps them become more flexible during whisking.
+            For new whisks, soak them in hot water for around 60-90 seconds for the tips to expand.
+        </p>
+        <figure class="recommended_equipment">
+            <img src="{{ url_for('static', filename='img/bamboo_whisk.png') }}">
+            <figcaption>Bamboo whisk</figcaption>
+        </figure>
+        <p>
+            To create a creamy texture for the matcha (microfoam), add a little water to the matcha powder and stir in a circular motion until
+            a thick paste is formed. Then, add in more water and whisk vigorously (tips near the bottom of the bowl) for 30 seconds,
+            then whisk gently (tips slightly nearer to the surface of the mixture) for 20 seconds, then stir the 
+            surface of the mixture in a circular motion for 10 seconds to break the air bubbles.
+            <br><br>
+            To gain health benefits from the matcha, it is usually recommended to <b>avoid using dairy-based milk</b>, e.g., full-cream milk, for matcha lattes, 
+            because it contains <b>casein</b>, which binds with the antioxidants in the matcha, potentially hindering absorption by the body.
+        </p>
+    </div>
+    <div id="cream_prep">
+        <h2>Cream preparation tips</h2>
+        <p>
+            Cream prothing is the process of aerating cream to create a light, airy, and often thickened texture.
+            The fat content of the cream plays a crucial role, with higher-fat creams generally producing a richer,
+            more stable foam. 
+            <br><br>
+            <b>A helpful tip for milk of choice:</b> Since all of my cream-based recipes use 
+            a little milk, my recommendation is <b>barista-edition</b> milk because they are known to be blended 
+            specifically for frothing purposes in cafes.
+            It is personally recommended to use a <b>frother</b> to whisk the mixture to effectively
+            create a creamy texture.
+            <br><br>
+            Aim to froth the mixture for a floating effect. In the beginning, position the end of the frother
+            <b>near the bottom</b> of the frothing pitcher until you can see a vortex. <!--insert demo picture-->
+            Swirl around until the mixture is well-mixed. After mixing, position the end of the frother 
+            <b>near the surface of the mixture</b> to add air into the mixture. Alternate between positioning
+            near the surface and near the bottom to mix in the air.
+            <figure class="recommended_equipment">
+                <img src="{{ url_for('static', filename='img/Vortex.jpg') }}">
+                <figcaption>An example of how a vortex should appear during frothing.</figcaption>
+            </figure>
+        </p>
+    </div>
+</div>
+{% endblock %}

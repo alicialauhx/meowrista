@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block title %}About Matcha{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about_matcha.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="about_matcha">
+    <div class="introduction">
+        <h2 id="matcha_intro">What is Matcha?</h2>
+        <p>
+            Matcha is a finely ground powder made from specially grown and processed green tea leaves.
+            Matcha is greatly known for its vibrant green color and unique flavor profile. 
+            It is traditionally used in Japanese tea ceremonies but has gained popularity globally for its
+            versatility in culinary applications and potential health benefits. 
+        </p>
+    </div>
+    <div class="health_benefits">
+        <h3 id="health">Health benefits of matcha</h3>
+        <p>
+            Matcha has high concentration of antioxidants and other beneficial compounds.
+            These include potential improvements in <b>heart health, brain function, and weight management</b>.
+            Besides that, matcha also provides <b>sustained energy boost</b> without the jitters or crashes often associated with coffee,
+            thanks to the combination of caffeine and L-theanine. <br><br>
+            The L-theanine in matcha increases alpha wave activity in the brain, promoting <b>relaxation and potentially reducing stress and anxiety</b>.<br><br>
+            Some studies even suggest that the EGCG in matcha may have <b>cancer-preventing</b> properties.
+        </p>
+    </div>
+    <div class="considerations">
+        <h3 id="considerations">Important considerations</h3>
+        <p>
+            While matcha offers many potential benefits, it is essential to consume it in moderation, 
+            as excessive caffeince intake can lead to <b>side effects</b> such as <b>anxiety, insomnia, or digestive issues</b>. <br><br>
+            It is also advised to avoid drinking matcha during iron-based meals because matcha is said to
+            impede iron absorption properties in the body. Hence, it is best to consume matcha in between meals
+            or meals which do not have high iron content.
+        </p>
+    </div>
+    <div class="types">
+        <h3 id="matcha_types">Types of matcha</h3>
+        <h4>Ceremonial matcha</h4>
+        <p>
+            This is the <b>highest grade</b> of matcha powder. It is known for its <b>rich umami flavor</b>
+            and it is designed mainly for traditional consumption (with only water).
+            This means that it has <b>fewer bitter nodes</b> compared to other grades.
+            However, it could still be used in latte creations, like those that I have been making! <br><br>
+        </p>
+
+        <details class="ceremonial_types">
+            <summary>Ceremonial matcha can be classified into several harvests or cultivars.</summary>
+            <div class="details_content">
+                <h4>1st harvest/Sprint harvest</h4>
+                <p>
+                    Harvested from the first flush of the <b>youngest, most tender leaves</b>,
+                    resulting in a <b>delicate, sweet flavor</b>.
+                </p>
+                <h4>Single cultivar</h4>
+                <p>
+                    Made from leaves of the same harvest for a <b>singular flavor profile</b>.
+                </p>
+                <h4>Multiple/Blended cultivar</h4>
+                <p>
+                    Made from different leaves to create a <b>balanced flavor profile</b>.
+                </p>
+            </div>
+        </details>
+        <h4>Premium grade/Second harvest</h4>
+        <p>
+            This grade contains a <b>stronger flavor</b> and is <b>slightly bitter</b> than ceremonial matcha,
+            hence, it is optimal for lattes and everyday consumption.
+        </p>
+        <h4>Culinary grade</h4>
+        <p>
+            This is produced from later leaf harvests in the season. It contains harsher parts of the leaves, .e.g.,
+            the stems, hence, it is not as smooth in texture as other grades and may not mix well with water. <br><br>
+            This grade has the <b>strongest taste</b> compared to other grades in terms of bitterness, 
+            so it is widely used in culinary/dessert and latte creations.
+        </p>
+    </div>
+    <div class="good_matcha">
+        <h3 id="good_quality">How to identify good matcha?</h3>
+        <p>
+            High quality matchas are vibrant green in color; lower-quality matchas are dull, yellowish in color.
+            <!-- insert comparison pictures -->
+            <br><br>
+            Besides that, high quality matchas often originate from Japan, primarily Uji, Yame, Kagoshima, etc.
+            High quality matchas usually froth well after whisking and hardly form clumps if whisked properly.
+        </p>
+    </div>
+    <div class="powder">
+        <figure class="sample">
+            <img src="{{ url_for('static', filename='img/good_quality_matcha.png') }}" width="100%;">
+            <figcaption style="text-align: center;">High quality matcha</figcaption>
+        </figure>
+        <figure class="sample">
+            <img src="{{ url_for('static', filename='img/low_quality_matcha.png') }}" width="100%;">
+            <figcaption style="text-align: center;">Low quality matcha</figcaption>
+        </figure>
+    </div>
+    <div class="storing_tips">
+        <h3 id="matcha_storage">Tips of storing matcha</h3>
+        <p>
+            Always seal the matcha powder in an air-tight packaging/container after opening to minimise oxidation.
+            Consume matcha within the recommended timeframe, at most 6 months. Last but not least,
+            Avoid storing it directly under sunlit areas. It is best to store matcha in refrigerators/freezers for optimal freshness.
+        </p>
+    </div>
+</div>
+{% endblock %}

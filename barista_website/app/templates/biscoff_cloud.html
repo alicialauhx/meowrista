@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block title %}Biscoff Cloud Latte{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/drink_recipe.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="drink_recipe">
+    <h2>Biscoff Cloud Latte</h2>
+    <img id="matcha" src="{{ url_for('static', filename='img/Biscoff cloud latte.jpg') }}">
+    <p>
+        Welcome to the recipe page for making biscoff cloud latte! 
+        <br><br>
+        Get ready to embrace the caramelized flavor of Biscoff cookies and cookie butter, with an added crunch of the cookie topping! 
+        Biscoff is refer to a brand of speculoos cookies, known for their deep caramel flavour and a hint of cinnamon.
+        The Biscoff cookie butter, a spreadable version of the cookie, adds a rich sweet, and 
+        buttery element to the drink.
+    </p>
+    <div class="note">
+        <i>
+            Please visit <a href="{{ url_for('drink_prep_tips') }}#cream_prep">cream preparation tips</a> before
+            proceeding with this recipe for a more efficient preparation
+        </i> &#x1F604.
+    </div>
+    <a id="skip-to-recipe" href="#recipe">Jump to recipe</a>
+</div>
+<div class="instructions">
+    <h3>Ingredients</h3>
+    <h4>Biscoff cream:</h4>
+    <ul>
+        <li>2 tbsp of oat milk or other plant-based milk of your choice</li>
+        <li><sup>1</sup>/<sub>4</sub> cup / 60 ml of heavy cream</li>
+        <li><sup>1</sup>/<sub>2</sub> tbsp of Biscoff spread</li>
+        <li>Biscoff cookie</li>
+    </ul>
+    <h4>Latte:</h4>
+    <ul>
+        <li><sup>1</sup>/<sub>3</sub> cup / 80 ml of oat milk or other plant-based milk of your choice</li>
+        <li>1 cup / 1 large block of ice</li>
+        <li><sup>1</sup>/<sub>2</sub> tbsp of Biscoff spread</li>
+    </ul>
+</div>
+<div class="ingredients_and_equipment">
+    <figure>
+        <img src="{{ url_for('static', filename='img/Ingredients (Biscoff latte).jpg') }}">
+        <figcaption style="text-align: center;">Ingredients for drink preparation</figcaption>
+    </figure>
+</div>
+<div class="instructions">
+    <h3>Equipment</h3>
+    <ul>
+        <li><span style="color: grey;">Measuring spoons (optional)</span></li>
+        <li>Microwave / <span style="color: grey;">Kettle with adjustable temperature (optional)</span></li>
+        <li>Microwave lid / any container lid</li>
+        <li>Pestle and mortar / <span style="color: gray;">Blender (optional)</span></li>
+        <li><span style="color: grey;">Thermometer (optional)</span></li>
+        <li>Sieve</li>
+        <li>Bowl / Chawan</li>
+        <li>Wooden spoon / chashaku</li>
+        <li>Bamboo whisk</li>
+        <li>Hand-held frother</li>
+        <li>Frothing pitcher / <span style="color: grey;">Cup or bowl for cream preparation (optional)</span></li>
+    </ul>
+</div>
+<div class="ingredients_and_equipment">
+    <figure>
+        <img src="{{ url_for('static', filename='img/pestle.png') }}">
+        <figcaption style="text-align: center;">Equipments for drink preparation</figcaption>
+    </figure>
+</div>
+<div class="instructions" id="recipe">
+    <h3>Recipe</h3>
+    <div class="prep_details">
+        <p style="color: grey;">Preparation Time:</p>
+        <p style="border-bottom: 1px solid black;">15 mins</p>
+        <p style="color: grey;">Cook time:</p>
+        <p style="border-bottom: 1px solid black;">5 mins</p>
+        <p style="color: grey;">Total time:</p>
+        <p style="border-bottom: 1px solid black;">20 mins</p>
+        <p style="color: grey;">Servings:</p>
+        <p>1 person</p>
+    </div>
+    <h4>Base:</h4>
+    <ol>
+        <li>Microwave the Biscoff spread to melt it.</li>
+        <li>Spread <b><sup>1</sup>/<sub>2</sub> of the Biscoff spread</b> from the base of the cup to the top edges for decoration.</li>
+        <li>Add <b>ice</b> to the cup for the drink.</li>
+        <li>Pour the <b>milk</b> into the cup.</li>
+    </ol>
+    <h4>Cream:</h4>
+    <ol>
+        <li>In a <b>frothing pitcher</b> or a separate cup/bowl, add in <b>heavy cream</b> and the <b>milk</b>.</li>
+        <li>Add in the <b>other half of the melted Biscoff spread</b>.</li>
+        <li>Whisk using a <b>hand-held frother</b> until the mixture is well-blended and creamy.</li>
+    </ol>
+    <h4>Final preparation:</h4>
+    <ol>
+        <li>
+            Pour the cream mixture into the cup for the drink. 
+            <i>
+                Tips on pouring: Gently pour the cream onto the tips of the ice to avoid mixing the cream with the latte. 
+                This will create the floating effect. Pour in a circular motion.
+            </i>
+        </li>
+        <li>Crush / Blend the cookie using the <b>pestle and mortar / blender</b> for the top decoration.</li>
+        <li>Scoop the crushed cookie bits onto the cream.</li>
+        <li>Enjoy!</li>
+    </ol>
+</div>
+{% endblock %}

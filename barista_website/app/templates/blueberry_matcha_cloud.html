@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}Blueberry Matcha Cloud Latte{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/drink_recipe.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="drink_recipe">
+    <h2>Blueberry Matcha Cloud Latte</h2>
+    <img id="matcha" src="{{ url_for('static', filename='img/Blueberry matcha cloud.png') }}">
+    <p>
+        Welcome to the recipe page for making blueberry matcha cloud latte!
+        Indulge in this cloudy blueberry twist for the original strawberry matcha.
+        <br><br>
+        Blueberry matcha cloud latte is a vibrant and refreshing beverage that comnines the earthy,
+        slightly bitter notes of matcha with the sweet, fruity clavor of blueberries.
+        It typically features a base of creamy milk, a swirl of blueberry puree, 
+        and a layer of creamy matcha. The result is a visually appealing drink with a unique balance of flavors,
+        offering a delightful twist on both matcha and fruit-flavored lattes. 
+    </p>
+    <div class="note">
+        <i>Please visit <a href="{{ url_for('drink_prep_tips') }}#cream_prep">cream preparation tips</a> for a more efficient preparation</i> &#x1F604.
+    </div>
+    <a id="skip-to-recipe" href="#recipe">Jump to recipe</a>
+</div>
+<div class="instructions">
+    <h3>Ingredients</h3>
+    <h4>Matcha cream:</h4>
+    <ul>
+        <li>4 g of matcha powder</li>
+        <li>2 tbsp of oat milk or other plant-based milk of your choice</li>
+        <li><sup>1</sup>/<sub>4</sub> cup / 60 ml of heavy cream</li>
+    </ul>
+    <h4>Blueberry latte:</h4>
+    <ul>
+        <li>1 handful of ripe blueberries</li>
+        <li><sup>1</sup>/<sub>2</sub> tbsp honey / other sweeteners of your choice</li>
+        <li><sup>1</sup>/<sub>3</sub> / 80 ml of oat milk or other plant-based milk of you choice</li>
+        <li>1 cup / 1 large block of ice</li>
+    </ul>
+</div>
+<div class="ingredients_and_equipment">
+    <figure>
+        <!-- <img src="{{ url_for('static', filename='img/Ingredients (blueberry matcha cloud).jpg') }}"> -->
+        <figcaption style="text-align: center;">Ingredients for drink preparation</figcaption>
+    </figure>
+</div>
+<div class="instructions">
+    <h3>Equipment</h3>
+    <ul>
+        <li><span style="color: grey;">Measuring spoons (optional)</span></li>
+        <li>Pestle and mortar / <span style="color: grey;">Blender (optional)</span></li>
+        <li>Sieve</li>
+        <li>Bowl / Chawan</li>
+        <li>Wooden spoon / chashaku</li>
+        <li>Hand-held frother</li>
+        <li>Frothing pitcher / <span style="color: grey;">Cup or bowl for cream preparation (optional)</span></li>
+    </ul>
+</div>
+<div class="ingredients_and_equipment">
+    <figure>
+        <img src="{{ url_for('static', filename='img/equipment.png') }}">
+        <figcaption style="text-align: center;">Equipments for drink preparation</figcaption>
+    </figure>
+</div>
+<div class="instructions" id="recipe">
+    <h3>Recipe</h3>
+    <div class="prep_details">
+        <p style="color: grey;">Preparation Time:</p>
+        <p style="border-bottom: 1px solid black;">5 mins</p>
+        <p style="color: grey;">Cook time:</p>
+        <p style="border-bottom: 1px solid black;">5 mins</p>
+        <p style="color: grey;">Total time:</p>
+        <p style="border-bottom: 1px solid black;">10 mins</p>
+        <p style="color: grey;">Servings:</p>
+        <p>1 person</p>
+    </div>
+    <h4>Base:</h4>
+    <ol>
+        <li>Crush/Blend the <b>blueberries</b> using a <b>pestle and mortar/blender</b> to make the puree for the base of the drink.</li>
+        <li>Add <b>ice</b> into the cup for the drink.</li>
+        <li>Drizzle <b>honey/other sweeteners of your choice</b> into the cup.</li>
+        <li>Add <b>milk</b> to the cup.</li>
+    </ol>
+    <h4>Cream:</h4>
+    <ol>
+        <li>In a <b>frothing pitcher or a separate cup/bowl</b>, add in <b>heavy cream</b> and the <b>milk</b>.</li>
+        <li>Sift in the <b>matcha powder</b> using a <b>sieve</b> and a <b>wooden spoon/chashaku</b> to prevent clumps.</li>
+        <li>Whisk using a <b>hand-held frother</b> until the mixture is well-blended and creamy.</li>
+    </ol>
+    <h4>Final preparation:</h4>
+    <ol>
+        <li>
+            Pour the cream mixture into the cup for the drink. 
+            <i>
+                Tips on pouring: Gently pour the cream onto the tips of the ice to avoid mixing the cream with the latte.
+                This is to create the floating effect. Pour in a circular motion.
+            </i>
+        </li>
+        <li>
+            Take <b>3 blueberries</b> for decoration. Slice the bottom tip of the blueberries
+            halfway with a <b>spoon</b> to prepare the decoration for the drink. 
+            Line the blueberries on the edge of the drink for a pancy finish.
+        </li>
+        <li>Enjoy!</li>
+    </ol>
+</div>
+<div class="note">
+    <i>You can substitute matcha with hojicha to make <b>hojicha ube cloud latte</b>!</i>
+</div>
+<p id="hojicha">
+    Hojicha version:<br>
+    <!-- <img src="{{ url_for('static', filename='img/Hojicha ube cloud latte.png') }}"> -->
+</p>
+{% endblock %}
