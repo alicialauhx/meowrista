@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}Salted Coconut Cloud Ube Latte{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/drink_recipe.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="drink_recipe">
+    <h2>Salted Coconut Cloud Ube Latte</h2>
+    <!-- <img id="matcha" src="{{ url_for('static', filename='img/Strawberry matcha cloud.png') }}"> -->
+    <img id="matcha" src="{{ url_for('static', filename='img/Salted coconut cloud ube latte.jpg') }}">
+    <p>
+        Welcome to the recipe page for making salted coconut cloud ube latte!
+        <br><br>
+        What goes well with ube other than matcha? Coconut!!! Indulge in the traditional yet
+        unique combination between the nutty flavor of ube (purple yam from the Philippines) 
+        with the richness of the coconut cream --- with a salty twist!
+        <br><br>
+        A salted coconut cream ube latte is typically made with ube halaya/paste or extract or
+        coconut milk/cream. The beverage is often topped with a swirl of whipped coconut cream and may include
+        other elements such as vanilla extract, sweetened condensed milk, or even toasted coconnut
+        for added flavor and texture.
+    </p>
+    <a id="skip-to-recipe" href="#recipe">Jump to recipe</a>
+    <div class="note">
+        <i>Please visit <a href="{{ url_for('drink_prep_tips') }}#cream_prep">cream preparation tips</a> for a more efficient preparation</i> &#x1F604.
+    </div>
+</div>
+<div class="instructions">
+    <h3>Ingredients</h3>
+    <h4>Coconut cream:</h4>
+    <ul>
+        <li>2 tsp of oat milk or other plant-based milk of your choice</li>
+        <li><sup>1</sup>/<sub>4</sub> cup / 60 ml of heavy cream</li>
+        <li>2 tbsp of coconut cream</li>
+        <li>1 pinch of salt</li>
+    </ul>
+    <h4>Ube latte:</h4>
+    <ul>
+        <li><sup>1</sup>/<sub>3</sub> cup / 80 ml of oat milk or other plant-based milk of your choice</li>
+        <li>1 cup / 1 large block of ice</li>
+        <li><sup>1</sup>/<sub>2</sub> tbsp of ube paste/halaya</li>
+        <li>A few drops of ube syrup/extract</li>
+    </ul>
+</div>
+<div class="ingredients_and_equipment">
+    <figure>
+        <img src="{{ url_for('static', filename='img/Ingredients (ube matcha cloud).jpg') }}">
+        <figcaption style="text-align: center;">Ingredients for drink preparation</figcaption>
+    </figure>
+</div>
+<div class="instructions">
+    <h3>Equipment</h3>
+    <ul>
+        <li><span style="color: grey;">Measuring spoons (optional)</span></li>
+        <li>Sieve</li>
+        <li>Bowl / Chawan</li>
+        <li>bamboo spoon / chashaku</li>
+        <li>Hand-held frother</li>
+        <li>Frothing pitcher / <span style="color: grey;">Cup or bowl for cream preparation (optional)</span></li>
+    </ul>
+</div>
+<div class="ingredients_and_equipment">
+    <figure>
+        <img src="{{ url_for('static', filename='img/equipment.png') }}">
+        <figcaption style="text-align: center;">Equipments for drink preparation</figcaption>
+    </figure>
+</div>
+<div class="instructions" id="recipe">
+    <h3>Recipe</h3>
+    <div class="prep_details">
+        <p style="color: grey;">Preparation Time:</p>
+        <p style="border-bottom: 1px solid black;">5 mins</p>
+        <p style="color: grey;">Cook time:</p>
+        <p style="border-bottom: 1px solid black;">5 mins</p>
+        <p style="color: grey;">Total time:</p>
+        <p style="border-bottom: 1px solid black;">10 mins</p>
+        <p style="color: grey;">Servings:</p>
+        <p>1 person</p>
+    </div>
+    <h4>Base:</h4>
+    <ol>
+        <li>Add <b>ube paste/halaya</b> into the cup for the drink.</li>
+        <li>Add <b>ice</b> to the cup.</li>
+        <li>Add <b>milk</b> to the cup.</li>
+        <li>Add in <b>ube syrup/extract</b>.</li>
+    </ol>
+    <h4>Cream:</h4>
+    <ol>
+        <li>In a <b>frothing pitcher</b> or a separate cup/bowl, add in <b>heavy cream</b> and the <b>milk</b>.</li>
+        <li>Add in the <b>coconut cream</b> and <b>salt</b>.</li>
+        <li>Whisk using a <b>hand-held frother</b> until the mixture is well-blended and creamy.</li>
+    </ol>
+    <h4>Final preparation:</h4>
+    <ol>
+        <li>
+            Pour the cream mixture into the cup for the drink. 
+            <i>
+                Tips on pouring: Gently pour the cream onto the tips of the ice to avoid mixing the cream with the latte.
+                This is to create the floating effect. Pour in a circular motion.
+            </i>
+        </li>
+        <li>Enjoy!</li>
+    </ol>
+</div>
+{% endblock %}

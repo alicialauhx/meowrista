@@ -81,7 +81,17 @@
             <figcaption>Salted Honey Cloud Matcha Latte</figcaption>
         </a>
     </figure>
-    <!-- <a class="item" id="salted coconut cloud cream matcha" href="{{ url_for('recipes_name', name='salted_coconut_cloud_matcha') }}">Salted Coconut Cloud Matcha Latte</a> -->
-    <!-- <a class="item" id="" -->
+    <figure class="item">
+        <a href="{{ url_for('recipes_name', name='double_matcha') }}">
+            <img src="{{ url_for('static', filename='img/Double matcha latte.jpg') }}" alt="double matcha cream">
+            <figcaption>Double Matcha Latte</figcaption>
+        </a>
+    </figure>
+    <figure class="item">
+        <a href="{{ url_for('recipes_name', name='salted_coconut_cloud_ube') }}">
+            <img src="{{ url_for('static', filename='img/Salted coconut cloud ube latte.jpg') }}" alt="salted coconut cloud cream ube purple">
+            <figcaption>Salted Coconut Cloud Ube Latte</figcaption>
+        </a>
+    </figure>
 </div>
 {% endblock %}
