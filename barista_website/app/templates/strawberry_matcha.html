@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block title %}Strawberry Matcha Latte{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/drink_recipe.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="drink_recipe">
+    <h2>Strawberry Matcha Latte</h2>
+    <img id="matcha" src="{{ url_for('static', filename='img/Strawberry matcha latte.jpg') }}">
+    <p>
+        Welcome to my recipe page for making strawberry matcha latte!
+        Strawberry matcha has been a viral sensation for matcha lovers and there have been lots of versions of making it.
+        <br><br>
+        A strawberry matcha latte is a vibrant and refreshing drink that combines the earthy,
+        slightly bitter notes of matcha with the sweet and fruity flavor of strawberries. 
+        Typically, it involves layering a strawberry puree with milk and matcha,
+        ofthen served over ice for a cool and visually appealing beverage.
+        The sweetness of the strawberries helps to balance the matcha's natural bitterness,
+        creating a harmonious and delicious flavor profile.
+    </p>
+    <div class="note">
+        <i>Please visit <a href="{{ url_for('drink_prep_tips') }}#cream_prep">cream preparation tips</a> for a more efficient preparation</i> &#x1F604.
+    </div>
+    <a id="skip-to-recipe" href="#recipe">Jump to recipe</a>
+</div>
+<div class="instructions">
+    <h3>Ingredients:</h3>
+    <h4>Latte:</h4>
+    <ul>
+        <li>4 g of matcha powder</li>
+        <li>4 ripe strawberries</li>
+        <li><sup>1</sup>/<sub>2</sub> tbsp honey / other sweeteners of your choice</li>
+        <li><sup>1</sup>/<sub>3</sub> / 80 ml of oat milk or other plant-based milk of you choice</li>
+        <li>1 cup / 1 large block of ice</li>
+    </ul>
+</div>
+<div class="ingredients_and_equipment">
+    <figure>
+        <img src="{{ url_for('static', filename='img/Ingredients (strawberry matcha).jpg') }}">
+        <figcaption style="text-align: center;">Ingredients for drink preparation</figcaption>
+    </figure>
+</div>
+<div class="instructions">
+    <h3>Equipment</h3>
+    <ul>
+        <li><span style="color: grey;">Measuring spoons (optional)</span></li>
+        <li>Pestle and mortar / <span style="color: grey;">Blender (optional)</span></li>
+        <li>Sieve</li>
+        <li>Bowl / Chawan</li>
+        <li>Bamboo spoon / Chashaku</li>
+        <li>Frothing pitcher / <span style="color: grey;">Cup or bowl for cream preparation (optional)</span></li>
+    </ul>
+</div>
+<div class="ingredients_and_equipment">
+    <figure>
+        <img src="{{ url_for('static', filename='img/pestle.png') }}">
+        <figcaption style="text-align: center;">Equipments for drink preparation</figcaption>
+    </figure>
+</div>
+<div class="instructions" id="recipe">
+    <h3>Recipe</h3>
+    <div class="prep_details">
+        <p style="color: grey;">Preparation Time:</p>
+        <p style="border-bottom: 1px solid black;">5 mins</p>
+        <p style="color: grey;">Cook time:</p>
+        <p style="border-bottom: 1px solid black;">5 mins</p>
+        <p style="color: grey;">Total time:</p>
+        <p style="border-bottom: 1px solid black;">10 mins</p>
+        <p style="color: grey;">Servings:</p>
+        <p>1 person</p>
+    </div>
+    <h4>Base:</h4>
+    <ol>
+        <li>Crush/Blend <b>3 strawberries</b> using a <b>pestle and mortar/blender</b> to make the puree for the base of the drink.</li>
+        <li>Add <b>ice</b> into the cup for the drink.</li>
+        <li>Drizzle <b>honey/other sweeteners</b> of your choice into the cup.</li>
+        <li>Add <b>milk</b> to the cup.</li>
+    </ol>
+    <h4>Matcha:</h4>
+    <ol>
+        <li>Sift the <b>matcha powder</b> into a <b>bowl/chawan</b> using a <b>sieve</b> and a <b>bamboo spoon/chashaku</b> to prevent clumps.</li>
+        <li>
+            Microwave the water while covering it with a <b>microwave lid cover/any container lid</b>.
+            Test with a <b>thermometer</b> every 10 seconds to adjust the heating time. (Mine took around 20 seconds to get to the rigth temperature).
+            If it gets too hot, you could leave it to cool down for a few minutes.
+            <i>Alternatively, if you have a kettle with an adjustable temperature, you could just heat water with it.</i>
+        </li>
+        <li>
+            Add the water into the <b>bowl/chawan</b> containing the matcha powder and whisk it using a <b>bamboo whisk</b>.
+        </li>
+    </ol>
+    <h4>Final preparation:</h4>
+    <ol>
+        <li>Pour the whisked matcha on the surface of the milk.</li>
+        <li>
+            Slice the bottom tip of the strawberry halfway with a knife to prepare the decoration for the drink.
+            Place the strawberry on the edge of the drink for a fancy finish.
+        </li>
+        <li>Enjoy!</li>
+    </ol>
+</div>
+<div class="note">
+    <i>You can substitute matcha with hojicha to make <b>hojicha ube cloud latte</b>!</i>
+</div>
+<p id="hojicha">
+    Hojicha version:<br>
+    <img src="{{ url_for('static', filename='img/Strawberry hojicha.jpg') }}">
+</p>
+{% endblock %}
