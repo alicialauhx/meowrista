@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block title %}Pistachio Cloud Matcha Latte{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/drink_recipe.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="drink_recipe">
+    <h2>Biscoff Cloud Matcha Latte</h2>
+    <img id="matcha" src="{{ url_for('static', filename='img/Pistachio cloud matcha latte.jpg') }}">
+    <p>
+        Welcome to the recipe page for making pistachio cloud matcha latte! 
+        <br><br>
+        Taste the nutty, sweet flavour of pistachio with the classic bitterness of the matcha in this creation --- 
+        Pistachio cloud matcha latte! 
+        <br><br>
+        Pistachio has been a recent viral sensation in culinary desserts and beverages. It is especially the 
+        star of the famous Dubai chocolate that is favoured by dessert lovers like me!
+        <br><br>
+        Pistachio is derived from the Spanish and Portugese word --- "Pistacho". It is a type of tree nutt
+        which is widely consumed as a food, either raw, roasted, or salted. Pistachios are known for being
+        a good source of protein, healthy fats, fiber, and variouus vitamins and minerals, including
+        vitamin B6, vitamin E, potassium, magnesium and zinc. Pistachios are linked to several potential
+        health benefits, including supporting healthy cholesterol levels, potentially lowering blood pressure,
+        and contributing to healthy sugar levels. They also contain antioxidants.
+    </p>
+    <div class="note">
+        <i>
+            Please visit <a href="{{ url_for('drink_prep_tips') }}#matcha_prep">matcha preparation tips</a>
+            and <a href="{{ url_for('drink_prep_tips') }}#cream_prep">cream preparation tips</a> before
+            proceeding with this recipe for a more efficient preparation
+        </i> &#x1F604.
+    </div>
+    <a id="skip-to-recipe" href="#recipe">Jump to recipe</a>
+</div>
+<div class="instructions">
+    <h3>Ingredients</h3>
+    <h4>Pistachio cream:</h4>
+    <ul>
+        <li>2 tbsp of oat milk or other plant-based milk of your choice</li>
+        <li><sup>1</sup>/<sub>4</sub> cup / 60 ml of heavy cream</li>
+        <li><sup>1</sup>/<sub>2</sub> tbsp of Pistacho spread</li>
+        <li><span style="color: grey;">Pistachios (optional)</span></li>
+    </ul>
+    <h4>Matcha:</h4>
+    <ul>
+        <li>4 g of matcha powder</li>
+        <li><sup>1</sup>/<sub>6</sub> cup / 40 ml of hot water (~70-80°C)</li>
+        <li><sup>1</sup>/<sub>3</sub> cup / 80 ml of oat milk or other plant-based milk of your choice</li>
+        <li>1 cup / 1 large block of ice</li>
+        <li><sup>1</sup>/<sub>2</sub> tbsp of Pistachio spread</li>
+    </ul>
+</div>
+<div class="ingredients_and_equipment">
+    <figure>
+        <img src="{{ url_for('static', filename='img/Ingredients (biscoff matcha).jpg') }}">
+        <figcaption style="text-align: center;">Ingredients for drink preparation</figcaption>
+    </figure>
+</div>
+<div class="instructions">
+    <h3>Equipment</h3>
+    <ul>
+        <li><span style="color: grey;">Measuring spoons (optional)</span></li>
+        <li>Microwave / <span style="color: grey;">Kettle with adjustable temperature (optional)</span></li>
+        <li>Microwave lid / any container lid</li>
+        <li>Pestle and mortar / <span style="color: gray;">Blender (optional)</span></li>
+        <li><span style="color: grey;">Thermometer (optional)</span></li>
+        <li>Sieve</li>
+        <li>Bowl / Chawan</li>
+        <li>bamboo spoon / chashaku</li>
+        <li>Bamboo whisk</li>
+        <li>Hand-held frother</li>
+        <li>Frothing pitcher / <span style="color: grey;">Cup or bowl for cream preparation (optional)</span></li>
+    </ul>
+</div>
+<div class="ingredients_and_equipment">
+    <figure>
+        <img src="{{ url_for('static', filename='img/pestle.png') }}">
+        <figcaption style="text-align: center;">Equipments for drink preparation</figcaption>
+    </figure>
+</div>
+<div class="instructions" id="recipe">
+    <h3>Recipe</h3>
+    <div class="prep_details">
+        <p style="color: grey;">Preparation Time:</p>
+        <p style="border-bottom: 1px solid black;">15 mins</p>
+        <p style="color: grey;">Cook time:</p>
+        <p style="border-bottom: 1px solid black;">5 mins</p>
+        <p style="color: grey;">Total time:</p>
+        <p style="border-bottom: 1px solid black;">20 mins</p>
+        <p style="color: grey;">Servings:</p>
+        <p>1 person</p>
+    </div>
+    <h4>Matcha:</h4>
+    <ol>
+        <li>Sift the <b>matcha powder</b> into a <b>bowl/chawan</b> using a <b>sieve</b> and a <b>bamboo spoon/chashaku</b> to prevent clumps.</li>
+        <li>
+            Microwave the water while covering it with a <b>microwave lid cover/any container lid</b>.
+            Test with a <b>thermometer</b> every 10 seconds to adjust the heating time. (Mine took around 20 seconds to get to the rigth temperature).
+            If it gets too hot, you could leave it to cool down for a few minutes.
+            <i>Alternatively, if you have a kettle with an adjustable temperature, you could just heat water with it.</i>
+        </li>
+        <li>
+            Add the water into the <b>bowl/chawan</b> containing the matcha powder and whisk it using a <b>bamboo whisk</b>.
+        </li>
+    </ol>
+    <h4>Base:</h4>
+    <ol>
+        <li>Microwave the Pistachio spread to melt it.</li>
+        <li>Spread <b><sup>1</sup>/<sub>2</sub> of the Pistachio spread</b> from the base of the cup to the top edges for decoration.</li>
+        <li>Add <b>ice</b> to the cup for the drink.</li>
+        <li>Pour the <b>milk</b> into the cup.</li>
+        <li>Pour the whisked matcha on the surface of the milk.</li>
+    </ol>
+    <h4>Cream:</h4>
+    <ol>
+        <li>In a <b>frothing pitcher</b> or a separate cup/bowl, add in <b>heavy cream</b> and the <b>milk</b>.</li>
+        <li>Add in the <b>other half of the melted Pistachio spread</b>.</li>
+        <li>Whisk using a <b>hand-held frother</b> until the mixture is well-blended and creamy.</li>
+    </ol>
+    <h4>Final preparation:</h4>
+    <ol>
+        <li>
+            Pour the cream mixture into the cup for the drink. 
+            <i>
+                Tips on pouring: Gently pour the cream onto the tips of the ice to
+                avoid mixing the cream with the latte. This will create the floating effect. Pour in a circular motion.
+            </i>
+        </li>
+        <li>Optional: Crush / Blend the <b>pistachios</b> using the <b>pestle and mortar / blender</b> for the top decoration.</li>
+        <li>Scoop the crushed pistachios onto the cream.</li>
+        <li>Enjoy!</li>
+    </ol>
+</div>
+<div class="note">
+    <i>You can substitute matcha with hojicha to make <b>pistachio cloud hojicha latte</b>!</i>
+</div>
+<p id="hojicha">
+    Hojicha version:<br>
+    <!-- <img src="{{ url_for('static', filename='img/Hojicha ube cloud latte.png') }}"> -->
+</p>
+{% endblock %}
